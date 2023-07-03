@@ -548,9 +548,9 @@ footer{
   }
 }
 
-/*-----------------------MEDIA QUERIES--------------------------*/
+/*-----------------------------------------------------MEDIA QUERIES--------------------------*/
 
-@media (300px <= width < 769px){
+@media (300px <= width < 400px){
   header{
     width: 100%;
     top: 0;
@@ -646,9 +646,7 @@ footer{
   
   .home-content p{
     font-size: 0.9rem;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: .1s;
+  
   }
   
   
