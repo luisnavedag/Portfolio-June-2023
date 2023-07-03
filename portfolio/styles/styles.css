@@ -335,6 +335,7 @@ header{
 
  .projects-title{
   color: #fff;
+  font-size: 2rem;
   margin-bottom: 40px;
  }
 
@@ -378,6 +379,10 @@ header{
   gap: 2rem;
   margin-bottom: 50px;
   margin-top: 10px;
+ }
+
+ .contact-title{
+  font-size: 2rem;
  }
 
  .form {
@@ -550,7 +555,7 @@ footer{
 
 /*-----------------------------------------------------MEDIA QUERIES--------------------------*/
 
-@media (300px <= width < 400px){
+@media (300px <= width < 370px){
   header{
     width: 100%;
     top: 0;
@@ -577,35 +582,17 @@ footer{
   }
   .navbar a {
     text-align: center;
-    font-size: 0.7rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    transition: .3s;
-    opacity: 0;
-    animation: slideTop 0.5s ease forwards;
-    animation-delay: calc(.3s * var(--i));
+    font-size: 0.68rem;
   }
-  
-  .navbar a:hover{
-    color: #02ECFF;
-  }
-  
-  .navbar a.active{
-    color: #02ECFF;
-  }
+
 
   /*-___________________________________________HOME__________________________________- */
   .home{
-    width: 90vw;
-    height: 90vh;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    width: 150vw;
+    height: auto;
     align-items: center;
-    padding: 0.5rem 10% 0 5rem;
     flex-direction: column;
-    margin-left: 100px;
+    /* border: 1px solid white; */
   }
   
   .home-img img{
@@ -620,46 +607,23 @@ footer{
   .home-content h3{
     font-size: 1.3rem;
     font-weight: 600;
-    opacity: 0;
-    animation: slideBottom 1s ease forwards;
-    animation-delay: .7s;
   }
-  
-  .home-content h3:nth-of-type(2){
-    margin-bottom: 1.7rem;
-    animation: slideTop 1s ease forwards;
-    animation-delay: .7s;
-  }
-  
-  .home-content h3 span{
-    color: #02ECFF;
-  }
+
   
   .home-content h1{
     font-size: 2.5rem;
-    font-weight: 600;
-    margin: -0.3rem 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: .1s;
   }
   
   .home-content p{
     font-size: 0.9rem;
   
   }
-  
-  
-
-
-
 
   /*-___________________________________________ABOUT__________________________________- */
   .about{
     /* border: 1px solid white; */
     width: 150vw;
     height: auto;
-    margin-top: 500px;
     margin-left: 20px;
    }
   
@@ -747,7 +711,190 @@ footer{
 
 /*-___________________________________________FOOTER__________________________________- */ 
 footer{
-  width: 150vw;
-  margin-left: 20px;
+  width: 100vw;
+  height: auto;
 }
 }
+
+
+/* _______________________________________DISPOSITIVOS 371PX/767PX WIDTH >= _______________________________________ */
+
+
+@media (min-width: 371px) and (max-width: 767px){
+  header{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-left: -100px;
+  }
+  
+  .logo{
+    visibility: hidden;
+
+  }
+    /*-_________ __________________NAVBAR_______________________________- */
+  .navbar{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: -28px;
+    width: fit-content;
+    padding: -2px;
+    gap: -3px;
+    margin-top: -29px;
+    
+  }
+  .navbar a {
+    text-align: center;
+    font-size: 0.47rem;
+  }
+
+
+  /*-___________________________________________HOME__________________________________- */
+  .home{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    justify-content: center;
+    margin-left: 0;
+  }
+  
+  .home-img img{
+    margin-top: 30px;
+    width: auto;
+    height: auto;
+    margin-left: -10px;
+
+  }
+  
+  .home-content{
+    width: 100%;
+    margin-left: -15px;
+  }
+  
+  .home-content h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  
+  .home-content h1{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .home-content p{
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn{
+    margin-left: 35px;
+  }
+
+  /*-___________________________________________ABOUT__________________________________- */
+  .about{
+    border: 1px solid white;
+    width: 100vw;
+    height: auto;
+    margin-top: 12px;
+
+   }
+  
+  
+   .about-p{
+    margin-right: -50px;
+    margin-left: -50px;
+   }
+/*-___________________________________________EDUCATION__________________________________- */  
+  
+
+.education{
+  border: 1px solid white;
+  width: 100vw;
+}
+
+.gallery {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.henry{
+  margin-left: 15px;
+  padding-top: 40px;
+}
+
+/*-___________________________________________SKILLS__________________________________- */  
+.skills{
+  width: 100vw;
+  height: auto;
+  border: 1px solid white;
+  padding: 15px;
+}
+
+.icon{
+  font-size: 6rem;
+}
+
+
+/*-___________________________________________PROJECTS__________________________________- */  
+.projects{
+  border: 1px solid white;
+  width: 100vw;
+  height: auto;
+  margin-top: 60px;
+ }
+
+ .projects-container{
+  width: 100vw;
+ }
+
+.tab-content{
+  width: 100vw;
+  gap: 2rem;
+  margin-bottom: 70px;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+
+/*-___________________________________________CONTACT__________________________________- */ 
+.contact{
+  border: 1px solid white;
+  width: 100vw;
+  height: auto;
+  margin-top: 20px;
+ }
+.form{
+  width: 80vw;
+  height: auto;
+}
+
+/*-___________________________________________FOOTER__________________________________- */ 
+footer{
+  width: 100vw;
+  height: auto;
+}
+
+.social2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
