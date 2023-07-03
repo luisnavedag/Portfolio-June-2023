@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenidos a mi Portfolio</title>
+  <link rel="icon" href="./assets/folder.png" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Luis Naveda</a>
+
+    <nav class="navbar">
+        <a href="#" style="--i:1;" class="active">Home</a>
+        <a href="#about" style="--i:2;">Sobre Mi</a>
+        <a href="#education" style="--i:3;">Cursos y capacitaciones</a>
+        <a href="#skills" style="--i:4;">Habilidades</a>
+        <a href="#projects" style="--i:5;">Proyectos</a>
+        <a href="#contact" style="--i:6;">Contacto</a>
+    </nav>
+</header>
+
+<!-------------------------------------HOME SECTION---------------------------------------->
+
+<section class="home">
+    <div class="home-content">
+        <h3>Hola, mi nombre es</h3>
+        <h1>Luis Naveda</h1>
+        <h3>Y soy <span id="simpleUsage"></span></h3>
+        <p>Soy un apasionado de la programación. Desde febrero de 2021, he adquirido habilidades en JavaScript, HTML, CSS y React, y actualmente estoy ampliando mis conocimientos como estudiante de Desarrollo Full Stack en el bootcamp de SoyHenry. Mi autodisciplina, adaptabilidad y disposición para enfrentar desafíos me impulsan a alcanzar mis metas como programador.
+        </p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/luis.navedagarcia/" target="_blank" style="--i:7;"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/luisnavedag/" target="_blank" style="--i:8;"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://github.com/luisnavedag" target="_blank" style="--i:9;"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/luisnavedag" target="_blank" style="--i:10;"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <a href="./assets/LuisNavedaCV.pdf" download="Luis Naveda CV" class="btn">Descargar CV</a>
+    </div>
+    <div class="home-img">
+        <img src="./assets/imagen.png" class="ml-20" alt="profile-pic-portfolio"/>
+    </div>
+
+</section>
+
+<!-------------------------------------ABOUT SECTION---------------------------------------->
+
+<section id="about" class="about">
+ 
+    <h1 class="about-title">Sobre Mí</h1>
+    <p class="about-p" style="margin-top: 30px;">¡Hola! soy Luis, un apasionado programador full stack. Mi viaje en el mundo de la programación comenzó en 2021, y desde entonces he estado inmerso en el fascinante universo de la tecnología y el desarrollo de software. </p>
+    <br>    
+    <p class="about-p">A lo largo de mi trayecto, he adquirido una amplia variedad de habilidades en diferentes tecnologías y lenguajes de programación. Mi experiencia abarca HTML, CSS y JavaScript, que son fundamentales para el desarrollo web moderno. Además, he trabajado con frameworks como React y Redux, lo que me ha permitido crear interfaces de usuario interactivas y dinámicas.</p>
+    <br>
+    <p class="about-p">Recientemente, he ampliado mi conocimiento hacia el desarrollo backend. He estado trabajando con Node.js, aprovechando su eficiencia y escalabilidad, y he utilizado Express.js como mi framework preferido para construir servidores web.</p>
+    <br>
+    <p class="about-p">Cada día, me entusiasma la idea de aprender más y mejorar mis habilidades técnicas. Estoy constantemente investigando nuevas tecnologías y tendencias en el campo de la programación para mantenerme actualizado y aprovechar al máximo mi potencial como desarrollador full stack.</p>
+    
+    
+</section>
+
+<!-------------------------------------EDUCATION SECTION---------------------------------------->
+
+<section class="education" id="education">
+    <h1 class="education-title">Cursos y Capacitaciones</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+          <img src="./assets/argentina programa.PNG" alt="Certificate 1">
+          <div class="item-description">
+            <h3>Introducción a la programación (AP)</h3>
+            <p>&#9733; Introducción al mundo de la programación <br>
+                &#9733; Javascript (Básico) <br>
+                &#9733; Ruby (Básico)
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/html css open bootcamp.PNG" stalt="Certificate 2">
+          <div class="item-description">
+            <h3>HTML y CSS (OpenBootcamp)</h3>
+            <p>&#9733; HTML (Básico/Intermedio) <br>
+                &#9733; CSS (Básico/Intermedio) <br>
+                &#9733; Animaciones <br>
+                &#9733; Sass <br>
+                &#9733; Diseño web responsive 
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/javascript open bootcamp.PNG" alt="Certificate 3">
+          <div class="item-description">
+            <h3>Javascript (OpenBootcamp)</h3>
+            <p>&#9733; Tipos de datos <br>
+                &#9733; Métodos (Strings, Arrays, Objetos) <br>
+                &#9733; Bucles <br>
+                &#9733; Manipulación del DOM <br>
+                &#9733; ES6
+            </p>
+          </div>
+        </div>
+      </div>
+        <div class="gallery-item henry">
+          <img src="./assets/Prueba certificado.png" alt="Certificate 4" style="filter: blur(5px);">
+          <div class="item-description">
+            <h3>Full Stack Developer (Henry) LOADING</h3>
+            <p>&#9733; Javascript (ES6) <br>
+                &#9733; React + Redux <br>
+                &#9733; NodeJS <br>
+                &#9733; Express <br>
+                &#9733; SQL
+            </p>
+          </div>
+        </div>
+      </div>
+</div>
+
+</section>
+
+
+<!-------------------------------------SKILLS SECTION---------------------------------------->
+
+
+<section class="skills" id="skills">
+    <div>
+        <h1 class="skills-title">Habilidades</h1>
+    </div>
+ <div class="gallery-skills" style="--i:11;">
+    <div class="skill">
+        <i class='bx bxl-html5 icon'></i>
+        <p>HTML</p>
+    </div>
+    <div class="skill">
+        <i class='bx bxl-css3 icon'style="--i:12;"></i>            
+        <p>CSS</p>
+    </div>
+    <div class="skill">
+        <i class='bx bxl-javascript icon'style="--i:13;"></i>
+        <p>Javascript</p>
+    </div>
+    <div class="skill">
+        <i class='bx bxl-bootstrap icon'style="--i:14;"></i>
+        <p>Bootstrap</p>
+    </div>
+    <div class="skill">
+        <i class='bx bxl-tailwind-css icon' style="--i:15;"></i>
+        <p>Tailwind CSS</p>
+    </div>
+    <div class="skill">
+        <i class='bx bxl-git icon icon'style="--i:16;" ></i>
+        <p>Git</p>
+    </div>
+    <div class="skill">
+        <i class='bx bxl-react icon'style="--i:17;"></i>
+        <p>React</p>
+    </div>
+    <div class="skill">
+        <i class='bx bxl-redux icon' style="--i:18;"></i>
+        <p>Redux</p>
+    </div>
+    <div class="skill">
+        <i class='bx bxl-nodejs icon' style="--i:19;"></i>
+        <p>NodeJs</p>
+    </div>
+    <div class="skill">
+        <i class='bx bxl-postgresql icon' style="--i:20;"></i>
+        <p>PostgreSQL</p>
+    </div>
+    <div class="skill">
+        <i class='bx bxl-typescript icon' style="--i:21;"></i>
+        <p>Typescript</p>
+    </div>
+</div>
+
+</section>
+<!-------------------------------------PROJECT SECTION---------------------------------------->
+          <section class="projects" id="projects">
+            <h1 class="projects-title">Proyectos</h1>
+            <div class="projects-container">
+            <div class="tab-content">
+              <h3>Clon de página oficial de Coinbase</h3>
+              <p>En este proyecto utilicé las habilidades adquiridas en el curso de HTML y CSS de OpenBootcamp, aplicando estilos no solo CSS puro, sino también ayudándome con un framework como Bootstrap y un preprocesador como Sass.</p>
+              <h3>Herramientas:</h3>
+              <ul>
+                <li> HTML</li>
+                <li> CSS</li>
+                <li> Bootstrap</li>
+                <li> Sass</li>
+              </ul>
+              <video class="video" src="./assets/Coinbase.mp4" controls></video>
+            </div>
+            <div class="tab-content">
+              <h3>Freecodecamp Testimonios</h3>
+              <p>Después de adquirir los conocimientos básicos de React y cómo manejar los estados, props y demás funcionalidades, utilizando tanto componentes de clase como funcionales realicé este pequeño proyecto para poner en práctica todo lo adquirido. Se trata de una copia de la sección de testimonios de la página de Freecodecamp</p>
+              <h3>Herramientas:</h3>
+              <ul>
+                  <li> HTML</li>
+                  <li> CSS</li>
+                  <li> Javascript</li>
+                  <li> React</li>
+              </ul>
+              <video class="video" src="assets/testimonios.mp4" controls></video>
+            </div>
+            <div class="tab-content">
+              <h3>Click Counter</h3>
+              <p>Después de adquirir los conocimientos básicos de React y cómo manejar los estados de sus componentes, realicé este pequeño proyecto para poner en práctica todo lo adquirido.</p>
+              <h3>Herramientas:</h3>
+                <ul>
+                    <li> HTML</li>
+                    <li> CSS</li>
+                    <li> Javascript</li>
+                    <li> React</li>
+                </ul>
+                <video class="video" src="assets/Click counter.mp4" controls></video>
+              </div>
+              <div class="tab-content">
+                <h3>Calculator</h3>
+                <p>Después de adquirir los conocimientos básicos de React y cómo manejar los estados de sus componentes, realicé este pequeño proyecto para poner en práctica todo lo adquirido.</p>
+                <h3>Herramientas:</h3>
+                <ul>
+                    <li> HTML</li>
+                    <li> CSS</li>
+                    <li> Javascript</li>
+                    <li> React</li>
+                </ul>
+                <video class="video" src="assets/calculator.mp4" controls></video>
+              </div>
+              <div class="tab-content">
+                <h3>To-Do List</h3>
+                <p>Después de adquirir los conocimientos básicos de React y cómo manejar los estados, props y demás funcionalidades, utilizando tanto componentes de clase como funcionales realicé este pequeño proyecto para poner en práctica todo lo adquirido. Se trata de una To-Do List que me permite organizar mis tareas por realizar, marcarlas una vez terminadas y eliminarlas de mi lista</p>
+                <h3>Herramientas:</h3>
+                <ul>
+                    <li> HTML</li>
+                    <li> CSS</li>
+                    <li> Javascript</li>
+                    <li> React</li>
+                </ul>
+                <video class="video" src="assets/todolist.mp4" controls></video>
+              </div>
+              <div class="tab-content">
+                <h3>Rick & Morty App</h3>
+                <p>Como proyecto integral del bootcamp de Henry, apliqué todo lo aprendido durante los 4 módulos, donde aprendí a manipular no solamente el Front sino también el Back. Utilizando múltiples herramientas y con la ayuda de los profes he podido culminar la App completa, que permite:</p>
+                <ul>
+                  <li>Traer personajes desde su ID</li>
+                  <li>Agregar y eliminar personajes de Favoritos</li>
+                  <li>Filtrar personajes favoritos por género</li>
+                  <li>Ordenar personajes favoritos (Asc, Desc)</li>
+                </ul>
+                <h3>Herramientas:</h3>
+                <ul>
+                    <li> HTML</li>
+                    <li> CSS</li>
+                    <li> Javascript</li>
+                    <li> React</li>
+                    <li> Redux</li>
+                    <li> NodeJS</li>
+                    <li> ExpressJS</li>
+                    <li> Sequelize</li>
+                </ul>
+                <video class="video" src="assets/rick&morty.mp4" controls></video>
+              </div>
+              <div class="tab-content">
+                <h3>Pokémon App</h3>
+                <p>Como proyecto individual del bootcamp de Henry, apliqué todo lo aprendido durante los 4 módulos, donde aprendí a manipular no solamente el Front sino también el Back. Utilizando todos mis conocimientos adquiridos durante el Bootcamp he podido culminar la siguiente Pokémon APP, que permite:</p>
+                <ul>
+                  <li>Traer pokemones desde mi servidor</li>
+                  <li>Buscar pokemon por nombre</li>
+                  <li>Ordenar pokemons (A-Z, Z-A, Mayor Ataque, Menor Ataque)</li>
+                  <li>Crear nuevo pokémon y agregarle hasta 2 tipos</li>
+                  <li>Filtrar pokemones (Tipos, Creados o de la API)</li>
+                </ul>
+                <h3>Herramientas:</h3>
+                <ul>
+                    <li> HTML</li>
+                    <li> CSS</li>
+                    <li> Javascript</li>
+                    <li> React</li>
+                    <li> Redux</li>
+                    <li> NodeJS</li>
+                    <li> ExpressJS</li>
+                    <li> Sequelize</li>
+                    <li> PostgreSQL</li>
+                </ul>
+                <video class="video" src="assets/Pokemon App.mp4" controls></video>
+              </div>
+            </div>
+        </section>
+<!-- -----------------------CONTACT SECTION--------------------------------------------- -->
+        <section class="contact" id="contact">
+          <h1>Contacto</h1>
+          <form class="form" action="https://formspree.io/f/meqbjwov"
+          method="POST">
+            <label for="email">Email: </label>
+            <input type="text" placeholder="Tu email..." class="input" name="email">
+            <label for="message">Mensaje: </label>
+            <textarea placeholder="Tu mensaje..." name="message"></textarea>
+             
+            <button type="submit">Enviar</button>
+        </form>
+        </section>
+
+<!-------------------------------------FOOTER-------------------------->
+<footer>
+  <div class="social2">
+    <a href="https://www.facebook.com/luis.navedagarcia/" target="_blank" style="--i:7;"><i class='bx bxl-facebook'></i></a>
+    <a href="https://www.instagram.com/luisnavedag/" target="_blank" style="--i:8;"><i class='bx bxl-instagram-alt'></i></a>
+    <a href="https://github.com/luisnavedag" target="_blank" style="--i:9;"><i class='bx bxl-github'></i></a>
+    <a href="https://www.linkedin.com/in/luisnavedag" target="_blank" style="--i:10;"><i class='bx bxl-linkedin' ></i></a>
+  </div>
+</footer>
+<script src="./scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* Component Container */
+.container{
+  margin-top: 110px;
+  position: absolute;
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/*Text in home*/
+
+.homeContent{
+  margin-left: 50px;
+  color: #fff;
+  width: 65vw;
+  height: 70vh;
+  text-align: left;
+  animation: slideLeft .5s;
+  animation-delay: .3s;
+}
+
+/*Social media*/
+
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #02ECFF;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #02ECFF;
+    text-decoration: none;
+    margin: 1rem 0.9rem 1rem 0;
+    transition: .5s ease;
+    opacity: 1;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+    &:hover{
+      background-color: #02ECFF;
+      color: #1f242d;
+      box-shadow: 0 0 1rem #02ECFF;
+    }
+}
+
+/*Download CV button*/
+
+.btnDownload{
+  display: inline-block;
+  padding: 1.1rem 1.5rem;
+  margin-top: 0.7rem;
+  background: #02ECFF;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.5rem #02ECFF;
+  font-size: 1rem;
+  color: #1f242d;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: .1s;
+  transition: .5s;
+  &:hover{
+    background-color: #1f242d;
+    color: #02ECFF;
+    transition: .5s ease;
+  }
+}
+
+.profileImg img{
+  max-width: 350px;
+  max-height: 350px;
+  margin-left: 100px;
+  margin-right: -6rem;
+  margin-top: 30px;
+  opacity: 0;
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: .1s, 3s;
+}
+
+
+
+/*------------------ ANIMATIONS/TRANSITIONS  ----------------------------------------------*/
+
+
+@keyframes slideRight {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0%{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+}
+
+@keyframes floatImage{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-24px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}

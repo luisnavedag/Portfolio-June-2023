@@ -1,0 +1,95 @@
+/* Component Container*/
+.container{
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    
+}
+
+
+/* Header */
+.header{
+    margin: 5px 15px 0 20px;
+    width: 90vw;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+/* Logo Luis Naveda */
+.logo{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    cursor: default;
+    /* opacity: 0; */
+    /* animation: slideRight 1s ease forwards; */
+  }
+
+  
+/* Navbar Navigate */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-right: -20px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
+    margin-left: 40px;
+    transition: .3s;
+    opacity: 1;
+}
+
+.navLinkDeco {
+    opacity: 0;
+    text-decoration: none;
+    color: white;
+    transform: translateX(100px);
+    animation: slideIn 0.5s forwards;
+    transition: .5s;
+    &:hover{
+        color: #02ECFF;
+        transition: .5s;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .navLinkDeco:nth-child(1) {
+    animation-delay: calc(var(--animation-order) * 0.1s);
+  }
+  
+  .navLinkDeco:nth-child(2) {
+    animation-delay: calc(var(--animation-order) * 0.2s);
+  }
+
+
+
+
+/* Animations and Transitions */
+
+@keyframes slideRight {
+    0%{
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
