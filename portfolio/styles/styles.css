@@ -72,9 +72,8 @@ header{
 }
 
 .home-img img{
-  width: 350px;
-  height: 350px;
-  margin-left: -7rem;
+  width: auto;
+  height: auto;
   margin-right: -6rem;
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
