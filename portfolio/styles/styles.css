@@ -763,7 +763,7 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     justify-content: center;
     margin-left: 0;
   }
@@ -872,7 +872,6 @@ footer{
   width: 100vw;
   gap: 2rem;
   margin-bottom: 70px;
-  /* border: 1px solid white; */
   padding: 20px;
 }
 
