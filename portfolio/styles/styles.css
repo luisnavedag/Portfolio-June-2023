@@ -720,6 +720,11 @@ footer{
 
 
 @media (min-width: 371px) and (max-width: 767px){
+
+  html, body{
+    overflow-x: hidden;
+  }
+
   header{
     width: 100vw;
     display: flex;
@@ -734,7 +739,7 @@ footer{
   }
     /*-_________ __________________NAVBAR_______________________________- */
   .navbar{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -805,7 +810,7 @@ footer{
 
   /*-___________________________________________ABOUT__________________________________- */
   .about{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 100vw;
     height: auto;
     margin-top: 12px;
@@ -821,7 +826,7 @@ footer{
   
 
 .education{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 100vw;
 }
 
@@ -842,7 +847,7 @@ footer{
 .skills{
   width: 100vw;
   height: auto;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   padding: 15px;
 }
 
@@ -853,7 +858,7 @@ footer{
 
 /*-___________________________________________PROJECTS__________________________________- */  
 .projects{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 100vw;
   height: auto;
   margin-top: 60px;
@@ -867,14 +872,14 @@ footer{
   width: 100vw;
   gap: 2rem;
   margin-bottom: 70px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   padding: 20px;
 }
 
 
 /*-___________________________________________CONTACT__________________________________- */ 
 .contact{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 100vw;
   height: auto;
   margin-top: 20px;
