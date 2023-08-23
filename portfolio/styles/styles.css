@@ -202,6 +202,94 @@ header{
   animation: slideBottom 4s ease forwards;
   animation-delay: .2s;
  }
+
+
+ /* ----------------------------------------TOOGLE SECTION -----------------------------------------------*/
+
+/* Estilos para el menú de hamburguesa */
+
+.navbarToggle {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #02ECFF; /* Cambiar a tu color de acento preferido */
+}
+
+/* Estilo para dispositivos móviles */
+
+@media screen and (max-width: 600px) {
+  .navbarToggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #1f242d; 
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+  }
+
+  .menu.active {
+      display: flex;
+  }
+
+  .menu li {
+      margin: 10px 0;
+      padding-left: 1rem;
+  }
+
+  .menu-toggle {
+      display: flex;
+      transition: .3s;
+      &:hover{
+        transform: scale(0.98);
+        transition: .3s;
+      }
+  }
+}
+
+
+
+
  /* ----------------------------------------EDUCATION SECTION -----------------------------------------------*/
 
  .education{
@@ -632,15 +720,17 @@ footer{
   }
     /*-_________ __________________NAVBAR_______________________________- */
   .navbar{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin-left: -100px;
-    width: 150vw;
+    width: 150vw; */
+    display: none;
   }
   .navbar a {
     text-align: center;
     font-size: 0.68rem;
+    display: none;
   }
 
 
@@ -807,6 +897,7 @@ footer{
     flex-wrap: wrap;
     justify-content: start;
     padding-top: 0.5rem;
+    display: none;
     
   }
   .navbar a {
