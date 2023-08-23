@@ -225,21 +225,29 @@ header{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+ 
   }
   
   .gallery-item {
     /* flex: 0 1 200px; */
     width: 340px;
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: flex-start;
     border: 1px solid #02eaff6f;
     border-radius: 10px;
-    padding: 20px;
     animation: slideRight .8s;
+  }
+
+  .div-img{
+    /* border: 1px solid #02ECFF; */
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .gallery-item img{
@@ -256,8 +264,13 @@ header{
 
   
   .item-description {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    margin-top: 10px;
   }
   
   .item-description h3 {
@@ -270,6 +283,26 @@ header{
     font-size: 13px;
   }
 
+  .div-btn-gallery{
+    /* border: 1px solid #02ECFF; */
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+  }
+
+  .btn-certificado{
+    border: 1px solid #02ECFF;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    color: #02ECFF;
+    font-size: 1.5rem;
+    transition: .3s;
+    &:hover{
+      transform: scale(0.98);
+      transition: .3s;
+    }
+  }
 
  /* ----------------------------------------SKILLS SECTION --------------------------------------------------*/
 .skills{
