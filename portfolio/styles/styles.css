@@ -463,7 +463,7 @@ header{
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
  }
 
@@ -474,31 +474,61 @@ header{
   justify-content: center;
   align-items: center;
   width: 95%;
-  gap: 2rem;
+  height: 400px;
   margin-bottom: 70px;
-  padding: 20px;
+}
+
+.div-title{
+  /* border: 1px solid #02ECFF; */
+  width: 100%;
+  height: 10%;
 }
 
 .project-title{
-  font-size: 25px;
-  font-weight: 700
+  font-size: 20px;
+  font-weight: 600
 }
 
 .info-video{
+  /* border: 3px solid green; */
   display: flex;
-
+  height: 80%;
 }
 
 .project-info{
   /* border: 1px solid red; */
   padding: 1rem;
   width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  font-size: 15px;
+}
+
+.repo{
+  border: 1px solid #02ECFF;
+  width: 100px;
+  padding: 0.3rem;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #02ECFF;
+  gap: 0.5rem;
+  transition: .2s;
+  &:hover{
+    transform: scale(0.98);
+    transition: .3s;
+  }
 }
 
 .project-video{
   /* border: 1px solid yellow; */
   padding: 1rem;
   width: 50%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -508,9 +538,28 @@ header{
 .video{
   width: 90%;
   height: auto;
-  margin-bottom: 40px;
 }
 
+.technologies{
+  /* border: 2px solid rgb(205, 82, 102); */
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.technology{
+  border: 1px solid #02ECFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  color: #02ECFF;
+  padding: 10px;
+  gap: 0.2rem;
+}
 
 
  /*----------------------- CONTACT SECTION -----------------------------------------*/
@@ -1017,26 +1066,64 @@ footer{
   width: 100vw;
  }
 
-.tab-content{
-  width: 100vw;
-  gap: 2rem;
-  margin-bottom: 70px;
-  padding: 20px;
+ .tab-content{
+   width: 100vw;
+   height: 600px;
+   margin-bottom: 70px;
+   padding: 20px;
+ }
+
+ .div-title{
+  /* border: 1px solid orange; */
+  height: fit-content;
+ }
+
+
+.project-title{
+  font-size: 15px;
+}
+
+.repo{
+  width: 70px;
 }
 
 .info-video{
+  /* border: 1px solid yellow; */
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
 .project-info{
+  /* border: 1px solid red; */
   width: 100%;
+  font-size: 12px;
+  gap: 0.5rem;
 }
 
 .project-video{
+  /* border: 1px solid green; */
   width: 100%;
 }
+
+.technologies{
+  /* border: 1px solid purple; */
+  display: flex;
+  align-items: center;
+}
+
+.technology{
+  width: fit-content;
+  height: fit-content;
+  padding: 0.3rem;
+  font-size: 12px;
+}
+
+
+
+
+
+
 
 /*-___________________________________________CONTACT__________________________________- */ 
 .contact{
@@ -1184,12 +1271,46 @@ footer{
   margin-top: 0;
 }
 
+.tab-content{
+  /* border: 1px solid white; */
+  height: 600px;
+}
+
+.div-title{
+  /* border: 1px solid orange; */
+  height: fit-content;
+}
+
+.project-title{
+  font-size: 17px;
+}
+
+.project-info{
+  /* border: 1px solid blue; */
+  font-size: 14px;
+
+}
+
+.project-video{
+  /* border: 1px solid red; */
+
+}
+
+.repo{
+  height: fit-content;
+}
+
+.technology{
+  height: fit-content;
+  font-size: 15px;
+}
+
 /* -----------------------CONTACT-------------------- */
 
 .contact{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin: 0;
-  height: 50vh;
+  height: 100vh;
 }
 
 
