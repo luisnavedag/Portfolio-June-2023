@@ -1110,13 +1110,14 @@ footer{
   /* border: 1px solid purple; */
   display: flex;
   align-items: center;
+  margin-top: 15px;
 }
 
 .technology{
   width: fit-content;
   height: fit-content;
   padding: 0.3rem;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 
